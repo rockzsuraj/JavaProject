@@ -1,0 +1,49 @@
+//Codeacademy droid project??
+public class Droid{
+
+    String name;
+    int batteryLevel;
+
+    public Droid(String droidName){
+       name = droidName;
+       batteryLevel =100;
+    }
+
+    public String toString(){
+       return "Hey,I am codey";
+    }
+    
+
+    public void performTask(String task){
+      System.out.println(name + " is performing task: " + task);
+      batteryLevel = 10;
+    }
+
+    public void energyReport(){
+      System.out.println(batteryLevel);
+    }
+      
+    public void energyTransfer(int newBatteryLevel){
+       batteryLevel = newBatteryLevel;
+       System.out.println(name + " battery level is:" + batteryLevel);
+    }
+
+    public static void main(String[] args){
+     
+      Droid codey = new Droid("Codey");
+      Droid joe = new Droid("Joe");
+      codey.performTask("dancing");
+      joe.performTask("boxing");
+
+      codey.energyReport();
+      joe.energyReport();
+      
+      codey.energyTransfer(joe.batteryLevel);
+      joe.energyTransfer(codey.batteryLevel);
+       
+      //System.out.println(codey);
+      
+       //System.out.println(joe);
+    }
+  
+}//
