@@ -1,0 +1,24 @@
+import java.util.*;
+public class test{
+    public static void main(String[] args){
+      ArrayList<String> options = new ArrayList<String>();
+      
+      String[] option = {"Pay-per-ride","7-day Unlimited Ride", "30-day Unlimited Rides"};
+      for(int i=0;i<option.length;i++){
+          options.add(option[i]);
+         
+      }
+       System.out.println(options);
+       
+      
+      ArrayList<Double> ridePrices = new ArrayList<Double>();
+      double[] ridePrice = {2.75,33.00,127.00};
+       for(int i=0;i < ridePrice.length;i++){
+          ridePrices.add(ridePrice[i]);
+      }
+    System.out.println(ridePrices);
+    
+      
+    }
+    
+}
